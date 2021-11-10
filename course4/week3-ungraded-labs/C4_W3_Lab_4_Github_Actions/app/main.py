@@ -20,7 +20,7 @@ class Wine(BaseModel):
 @app.post("/predict")
 def predict(wine: Wine):
     """
-    Predict function
+    Predict function 
     """
     batches = wine.batches
     np_batches = np.array(batches)
